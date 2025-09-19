@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.container {
+    height: 100%;
+    min-height: 100vh;
+    background-image:url("https://tse2.mm.bing.net/th/id/OIP.OlQPMX35hVnBOQMzi9plmQHaFj?pid=Api&P=0&h=180");
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-size: cover;
+   
+  
+  
+}
+
+
+.todo-app {
+    
+    width: 50%;
+    min-width: 300px;
+    background: transparent;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px; 
+    color: rgb(227, 203, 203);
+    border: 3px solid grey;
+  
+    box-shadow: 2px 2px 30px 1px rgb(136, 122, 122);
+
+}
+
+.todo-app h1 {
+    
+    font-size: 54px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-shadow: 5px 5px 5px rgb(109, 97, 87);
+   
+}
+
+
+.row{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: #efe3e3;
+    margin: 30px;
+   
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+  
+}
+button{
+    border: none;
+    outline: none;
+    background:#4c73e8;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 16px 50px;
+    border-radius: 40px;
+}
+button:hover{
+    background: #283e80;
+    font-size: 18px;
+}   
+ul li{
+    list-style: none;
+    font-size: 24px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png); 
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 8px;
+    
+}
+ul li.checked{
+    text-decoration: line-through ;
+    color: #61b8d4bd;
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+    filter: hue-rotate(190deg) saturate(0.5);
+}
+
+ul li span{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+ul li span:hover{
+    background:rgb(130, 128, 128);
+    color:  #ff2e00;
+   
+}
